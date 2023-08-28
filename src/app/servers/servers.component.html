@@ -1,0 +1,22 @@
+<p>servers works!</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+      <a
+        href="#"
+        class="list-group-item"
+        *ngFor="let server of servers">
+        {{ server.name }}
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <a routerLink="/servers">reload the page</a>
+    <!-- absolute path(/servers)& relative path(server or ./server) & go back one path (../servers) will work-->
+    <app-edit-server></app-edit-server>
+    <hr>
+    <app-server></app-server>
+  </div>
+</div>
+  
+  
