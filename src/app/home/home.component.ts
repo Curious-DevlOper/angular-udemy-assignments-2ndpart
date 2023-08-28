@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-
+  onLoadServers(){
+    //first need to navigate to router
+    //navigate gets an argument which takes us to new route
+    this.router.navigate(['/servers']);
+  }
 }
