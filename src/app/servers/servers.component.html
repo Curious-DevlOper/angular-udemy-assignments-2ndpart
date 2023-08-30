@@ -11,7 +11,9 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
-    <a routerLink="/servers">reload the page</a>
+    <!-- <a routerLink="/servers">reload the page</a> -->
+    <button class="btn btn-primary" (click)="onReload()">Load server</button>
+
     <!-- absolute path(/servers)& relative path(server or ./server) & go back one path (../servers) will work-->
     <app-edit-server></app-edit-server>
     <hr>
